@@ -1,0 +1,270 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #333;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:8px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.paciente-invalido
+{
+	background-color: lightcoral;
+}
+
+.titulo-novo
+{
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-bottom: 0px;
+	
+	padding-top: 16px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.novo-paciente
+{
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info-novo-paciente
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 16px;
+	column-gap: 4px;	
+	border: 1px solid #ccc;
+	padding: 32px;
+	justify-items: stretch;
+	width: 622px;
+}
+
+input
+{
+	padding: 8px 5px;
+}
+
+.input-nome
+{
+	
+	width: 555px;
+}
+
+.caixa
+{
+	font-size: 16px;
+	width: 120px;
+	font-weight: 700;
+
+}
+
+
+.caixa-nome
+{
+	Grid-Column: 1 / span 3;
+	Grid-Row: 1;	
+	
+	
+}
+
+.caixa-peso
+{
+	Grid-Column: 1;
+	Grid-Row: 2;	
+}
+
+.caixa-altura
+{
+	Grid-Column: 2;
+	Grid-Row: 2;
+}
+
+.caixa-gordura
+{
+	Grid-Column: 3;
+	Grid-Row: 2;
+}
+
+
+.caixa-botao
+{
+	margin-top: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 900px;
+}
+
+.botao-novo-paciente
+{
+	width: 150px;
+}
+
+#mensagem-erro
+{
+	color: red;
+	margin: 10px;
+}
+
+.erroLi
+{
+	margin: 10px;
+}
+
+.fadeOut
+{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.input-pesquisa
+{
+	margin-bottom: 16px;
+	width: 280px;
+}
+
+.invisivel
+{
+	display: none;
+}
+
+.botao-buscar-paciente
+{
+	width: 250px;
+	position: absolute;
+	left: 20vw;
+}
