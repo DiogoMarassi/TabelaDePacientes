@@ -14,15 +14,24 @@ botaoAdicionar.addEventListener("click", function(){
         if(xhr.status == 200)
         {
             var resposta = xhr.responseText;
-        console.log(resposta);
-        console.log(typeof resposta);
+            console.log(resposta);
+            console.log(typeof resposta);
+            var pacientes = JSON.parse(resposta);
+            console.log(pacientes)
+            localStorage.setItem("itensFixos", JSON.stringify(pacientes))
+            console.log(itensFixos);
+                for(var i=0; i < pacientes.length; i++)
+                {   
+                    var botaoFixo = criaNovoBotao();
+                    var paciente = pacientes[i];
+                    var pacienteTr = adicionaPacienteNaTabela(paciente);
+                    pacienteTr.appendChild(botaoFixo);
+                    removePacienteExistente(botaoFixo);
+                    
+                }
 
-        var pacientes = JSON.parse(resposta);
-        
-        pacientes.forEach(function(paciente){
-        
-            adicionaPacienteNaTabela(paciente)
-        });
+               
+
         } else {
             console.log( xhr.status);
         }

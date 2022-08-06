@@ -114,7 +114,30 @@ button{
 
 }
 
-button:active{
+.botao-novo
+{
+	margin: 10px;
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+    background-color: darkred;
+    border: 0px;
+	text-align: center;
+	cursor: default;
+}
+
+.botao-novo:hover
+{
+	background-color: rgb(181, 14, 14);
+}
+
+.botao-novo:active
+{
+	box-shadow: 1px 1px 1px black;
+}
+
+
+.botao:active{
 	margin-top:8px;
 	border: 0;
 }
